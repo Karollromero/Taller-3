@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Programas Académicos</title>
+    <link rel="stylesheet" href="/css/pagina2.css">
+    <script src="../js/pagina2.js"></script>
+</head>
+<body class="fondo">
+    <h1 class="titulo">Programas Académicos</h1>
+    <form>
+        <fieldset class="items">
+            <label for="código" class="labels">Código del Programa</label>
+            <input type="text" required>
+            <label for="nombre" class="labels">Nombre del Programa</label>
+            <input type="text" required>
+            <label for="duración" class="labels">Duración del Programa</label>
+            <input type="text" required>
+            <label for="modalidad" class="labels">Modalidad</label>
+            <select name="modalidad">
+                <option value="Presencial">Presencial</option>
+                <option>Virtual</option>
+                <option>Semipresencial</option>
+            </select>
+            <label for="fecha" class="labels">Fecha de Inicio</label>
+            <input type="date">
+            <div>
+                <div><button>Guardar</button></div>
+                <div><button>Eliminar</button></div>
+                <div><button>Actualizar</button></div>
+                <div><button>Buscar</button></div>
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>

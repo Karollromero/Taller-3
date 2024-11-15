@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Matrículas</title>
+    <link rel="stylesheet" href="/css/pagina3.css">
+</head>
+<body class="fondo">
+    <h1 class="titulo">Matrículas</h1>
+    <form>
+        <fieldset class="items">
+            <label for="id_matrícula" class="labels">Identificación de matrícula</label>
+            <input type="text" required>
+            <label for="id_estudiante" class="labels">Identificación del estudiante</label>
+            <input type="text" required>
+            <label for="codigo" class="labels">Código del Programa</label>
+            <input type="text" required>
+            <label for="fecha_matricula" class="labels">Fecha de matrícula</label>
+            <input type="text" required>
+            <label for="estado_matricula" class="labels">Estado de la matrícula</label>
+            <select name="estado_matricula" required>
+                <option value="Activa">Activa</option>
+                <option>En proceso</option>
+                <option>Finalizada</option>
+                <option>Cancelada</option>
+            </select>
+            <div><button onclick="guardar()">Guardar</button></div>
+        </fieldset>
+    </form>
+</body>
+</html>

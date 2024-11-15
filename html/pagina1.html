@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/pagina1.css">
+</head>
+<body>
+    <body class="fondo">
+        <h1 class="titulo">Estudiantes Inscritos</h1>
+        <form>
+            <fieldset class="items">
+                <label for="id" class="labels">Identificación del Estudiante</label>
+                <input type="text" id="id" autofocus required>
+                <label for="Nombre" class="labels">Nombre completo</label>
+                <input type="text" id="Nombre" required pattern="[A-Za-z\s]+">
+                <label for="fecha" class="labels">Fecha de Nacimiento</label>
+                <input type="date" id="fecha" required max="2024-11-10">
+                <label for="email" class="labels">Correo Electronico</label>
+                <input type="text" id="email" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$">
+                <label for="telefono" class="labels">Telefono</label>
+                <input type="text" id="telefono" pattern="\d{8,15}">
+                <div>
+                    <div><button onclick="guardarEstudiantes()">Guardar</button></div>
+                    <div><button onclick="eliminarEstudiantes()">Eliminar</button></div>
+                    <div><button onclick="actualizarEstudiantes()">Actualizar</button></div>
+                    <div><button onclick="buscarEstudiantes()">Buscar</button></div>
+                </div>
+                
+            </fieldset>
+        </form>
+<script src="../js/pagina1.js"></script>        
+</body>
+</html>
